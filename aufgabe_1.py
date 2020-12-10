@@ -35,9 +35,9 @@ def sum_possible_aux(l, i, s):
     elif sum(l[:i+1]) < s:
         return None
     elif sum(l[:i+1]) > s:
-        # for m in l[:i+1]:
-        #     if m == s:
-        #         return [m]
+        for m in l[:i+1]:
+            if m == s:
+                return [m]
         
         lcopy = l[:i+1]
         for m in range(len(l[:i+1])):
