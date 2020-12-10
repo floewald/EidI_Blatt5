@@ -23,6 +23,10 @@ def inputTest_aux(l, i, s):
 
 
 def sum_possible_aux(l, i, s):
+    """
+    Quit ugly code....
+    What could be improved and how?s
+    """
     inputTest_aux(l, i, s)
     if ( s == 0 ) or ( i == 0 ):
         return []
